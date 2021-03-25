@@ -10,7 +10,7 @@ const AppRoute = ({
   Layout = (Layout === undefined) ? props => (<>{props.children}</>) : Layout;
 
   return (
-    <Route
+    <Route basename={process.env.PUBLIC_URL}
       {...rest}
       render={props => (
         <Layout>
